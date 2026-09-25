@@ -33,6 +33,26 @@ Use [VS Code](https://github.com/microsoft/vscode) as a design template while pr
 4. Switch to CodeUI target if you wish to run the app on a simulator
 5. Click build
 
+## Running on an iPhone
+
+1. Install the latest Xcode version (or Xcode beta) that supports your iOS version.
+2. Clone this repository and run `./downloadFrameworks.sh`.
+3. Open `/home/runner/work/codeapp/codeapp/Code.xcodeproj` in Xcode.
+4. In **Signing & Capabilities** for the app target:
+   - Set a unique **Bundle Identifier**.
+   - Select your **Apple Developer Team**.
+5. Connect your iPhone, unlock it, trust the Mac, and enable **Developer Mode** on iPhone.
+6. Select your iPhone as the run destination in Xcode, then build and run.
+
+## Distribution (TestFlight / App Store)
+
+1. Use a paid Apple Developer account.
+2. Archive the app in Xcode.
+3. Upload the archive to App Store Connect.
+4. Distribute through TestFlight or submit to the App Store.
+
+> If Xcode does not recognize your iOS version, update to a newer Xcode release or beta.
+
 The source code of the built-in languages are hosted on these repositories.
 | Language | Repository |
 |-----------------|-------------------|
